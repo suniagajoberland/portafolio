@@ -121,6 +121,28 @@ header nav ul li a {
   font-size: 1.5rem;
 }
 
+.servicio {
+  display: flex;
+  width: 600px;
+  width: 100vh;
+  margin: 10px;
+}
+
+.servicio img {
+  width: 0;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: 0.5s ease;
+}
+
+.servicio img:hover {
+  cursor: crosshair;
+  width: 300px;
+  opacity: 1;
+  filter: contrast(120%);
+}
+
 footer {
   background-color: var(--background-secondary-color);
   color: var(--font-secondary-color);
@@ -144,5 +166,9 @@ footer {
 
   .hero h1 {
     font-size: 3rem;
+  }
+
+  .servicio {
+    display: none;
   }
 }
